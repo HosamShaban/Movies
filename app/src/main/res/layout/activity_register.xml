@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_aaa"
+    tools:context=".RegisterActivity">
+
+    <ImageView
+        android:id="@+id/imageLogo3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="141dp"
+        android:layout_marginBottom="66dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/txtName"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_logo" />
+
+
+    <EditText
+        android:id="@+id/txtName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#000"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
+        android:drawablePadding="10dp"
+        android:hint="Name"
+        android:inputType="text"
+        android:maxLength="15"
+        android:padding="15dp"
+        android:textColorHint="#fff"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/phoneMNum1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageLogo3" />
+
+    <EditText
+        android:id="@+id/phoneMNum1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtName"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="13dp"
+        android:backgroundTint="#000"
+        android:drawableStart="@android:drawable/ic_menu_call"
+        android:drawablePadding="10dp"
+        android:hint="Mobile Number"
+        android:inputType="phone"
+        android:digits="0123456789"
+        android:maxLength="10"
+        android:padding="15dp"
+        android:text=""
+        android:textColorHint="#fff"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtPassword2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtName" />
+
+    <EditText
+        android:id="@+id/txtPassword2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtName"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="18dp"
+        android:backgroundTint="#000"
+        android:drawableStart="@android:drawable/ic_lock_idle_lock"
+        android:drawablePadding="10dp"
+        android:hint="Set Password"
+        android:inputType="textPassword"
+        android:padding="15dp"
+        android:textColorHint="#fff"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtPassword3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phoneMNum1" />
+
+    <EditText
+        android:id="@+id/txtPassword3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtName"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="46dp"
+        android:backgroundTint="#000"
+        android:drawableStart="@android:drawable/ic_lock_idle_lock"
+        android:drawablePadding="10dp"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:padding="15dp"
+        android:text=""
+        android:textColorHint="#fff"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtView101010"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPassword2" />
+
+
+    <TextView
+        android:id="@+id/txtView101010"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="11dp"
+        android:text="We Promise to keep your information safe"
+        android:textColor="#323232"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnRgs2"
+        app:layout_constraintStart_toStartOf="@+id/btnRgs2"
+        app:layout_constraintTop_toBottomOf="@+id/txtPassword3" />
+
+    <Button
+        android:id="@+id/btnRgs2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="75dp"
+        android:background="@drawable/btn_aaa"
+
+        android:theme="@style/Theme.My"
+        android:text="Register"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtView101010" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

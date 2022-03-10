@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">CINEX</string>
+    <string name="nav_header_title">CINEX</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_profile">Profile personly</string>
+    <string name="menu_movie">Booked movies</string>
+    <string name="menu_setting">Setting</string>
+    <string name="menu_favorite">Favorite</string>
+</resources>

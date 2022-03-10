@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_aaa"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/imageLogo2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="141dp"
+        android:layout_marginBottom="66dp"
+        app:layout_constraintBottom_toTopOf="@+id/txv_mobile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_logo" />
+
+    <EditText
+        android:id="@+id/txv_mobile"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="31dp"
+        android:backgroundTint="#000"
+        android:drawableStart="@android:drawable/ic_menu_call"
+        android:drawablePadding="10dp"
+        android:hint="Mobile Number"
+        android:inputType="phone"
+        android:maxLength="10"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:digits="0123456789"
+        android:padding="15dp"
+        android:textColorHint="#fff"
+        app:layout_constraintBottom_toTopOf="@+id/txtPassword1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageLogo2" />
+
+    <EditText
+        android:id="@+id/txtPassword1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txv_mobile"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="15dp"
+        android:backgroundTint="#000"
+        android:drawableStart="@android:drawable/ic_lock_idle_lock"
+        android:drawablePadding="10dp"
+        android:hint="Password"
+        android:maxLength="10"
+        android:inputType="textPassword"
+        android:padding="15dp"
+        android:text=""
+        android:textColorHint="#fff"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtForgot"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txv_mobile" />
+
+    <TextView
+        android:id="@+id/txtForgot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="51dp"
+        android:text="forgot password?"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnSign"
+        app:layout_constraintEnd_toEndOf="@+id/txtPassword1"
+        app:layout_constraintTop_toBottomOf="@+id/txtPassword1" />
+
+    <Button
+        android:id="@+id/btnSign"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="44dp"
+        android:background="@drawable/btn_aaa"
+        android:text="Sign IN"
+        android:theme="@style/Theme.My"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/txtCreateAccount"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtForgot" />
+
+    <TextView
+        android:id="@+id/txtCreateAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="153dp"
+        android:text="Don't have an account?"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/txv_register"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSign" />
+
+    <TextView
+        android:id="@+id/txv_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="6dp"
+        android:text="Register >"
+        android:textColor="#ffee00"
+        android:textSize="14sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtCreateAccount"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtCreateAccount" />
+</androidx.constraintlayout.widget.ConstraintLayout>
